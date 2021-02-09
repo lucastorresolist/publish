@@ -10,8 +10,8 @@ class PublishResource(BaseResource):
         "id_": fields.Integer,
         "id_pool": fields.Integer,
         "id_channel": fields.Integer,
-        "initial_date": fields.datetime,
-        "final_date": fields.datetime,
+        "initial_date": fields.DateTime(dt_format='iso8601'),
+        "final_date": fields.DateTime(dt_format='iso8601'),
         "is_activate": fields.Boolean
     }
 
